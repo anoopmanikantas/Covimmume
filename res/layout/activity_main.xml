@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Check if you are eligible to be vaccinated"
+        android:textAllCaps="false"
+        android:textColor="#E3DDDD"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="294dp"
+        android:layout_height="365dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Name"
+            android:textColor="#B7B2B2"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/editabletext"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:hint=" Full name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="#696666" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Address"
+            android:textColor="#B7B2B2"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <EditText
+            android:id="@+id/AddHouse"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/editabletext"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:hint=" House number"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/white"
+            android:textColorHint="#696666" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <EditText
+            android:id="@+id/AddStreet"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/editabletext"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:hint=" Street"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/white"
+            android:textColorHint="#696666" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <EditText
+            android:id="@+id/AddCS"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/editabletext"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:hint=" City and State"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/white"
+            android:textColorHint="#696666" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="146dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/mybutton"
+        android:onClick="btnclick"
+        android:text="NEXT"
+        android:textColor="#000000"
+        app:backgroundTint="#FF03DAC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Your personal data will be kept private"
+        android:textColor="#716F6F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.728" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
